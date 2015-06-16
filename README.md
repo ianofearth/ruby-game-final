@@ -10,7 +10,24 @@
 #Description: 
 <p>ruby-game is a program designed to help users learn about ruby in a fun, somewhat silly way.  The objective is to fill in missing bits of ruby code to progress through the game.</p>
 
-#Set-up instructions: 
+#Set-up instructions:
+Install gems with:
+```
+$ bundle install
+```
+Run the postgres database with:
+```
+$ postgres
+```
+In a new terminal, create the tables with the following commands:
+```
+$ rake db:create
+$ rake db:migrate
+```
+Finally, run the app with Sinatra using the command:
+```
+$ ruby app.rb
+```
 <p>All gems in Gemfile must be bundled and a Gemfile.lock file created prior to running this app.</p>
 <ol>
 <li>Go to www.github.com/ianofearth</li>
